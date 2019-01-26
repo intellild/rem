@@ -1,0 +1,40 @@
+{
+  "name": "remm",
+  "version": "0.0.1",
+  "description": "react immutable model",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "tsc --module es2015 --outDir esm && tsc --module commonjs --outDir lib",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intellild/rem.git"
+  },
+  "keywords": [
+    "react",
+    "immutable",
+    "model",
+    "two-way-binding"
+  ],
+  "author": "intellild",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/intellild/rem/issues"
+  },
+  "homepage": "https://github.com/intellild/rem#readme",
+  "devDependencies": {
+    "react": "^16.8.0-alpha.1",
+    "react-dom": "^16.8.0-alpha.1",
+    "typescript": "^3.2.4"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0-alpha.1",
+    "react-dom": "^16.8.0-alpha.1"
+  },
+  "dependencies": {
+    "@types/react": "^16.7.20",
+    "@types/react-dom": "^16.0.11",
+    "tslib": "^1.9.3"
+  }
+}

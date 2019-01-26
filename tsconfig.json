@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "jsx": "react",
+    "strict": true,
+    "outDir": "esm",
+    "declaration": true,
+    "lib": [
+      "dom",
+      "es2017"
+    ]
+  },
+  "exclude": [
+    "lib",
+    "esm"
+  ],
+  "include": [
+    "src"
+  ]
+}
