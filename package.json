@@ -5,7 +5,8 @@
   "main": "./lib/index.js",
   "scripts": {
     "build": "tsc --module es2015 --outDir esm && tsc --module commonjs --outDir lib",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "dev": "webpack-dev-server --progress"
   },
   "repository": {
     "type": "git",
@@ -24,13 +25,21 @@
   },
   "homepage": "https://github.com/intellild/rem#readme",
   "devDependencies": {
-    "react": "^16.8.0-alpha.1",
-    "react-dom": "^16.8.0-alpha.1",
-    "typescript": "^3.2.4"
+    "@babel/core": "^7.2.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.2.4",
+    "webpack": "^4.29.2",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
   },
   "peerDependencies": {
-    "react": "^16.8.0-alpha.1",
-    "react-dom": "^16.8.0-alpha.1"
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1"
   },
   "dependencies": {
     "@types/react": "^16.7.20",
